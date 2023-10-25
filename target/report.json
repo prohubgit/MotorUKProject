@@ -1,0 +1,190 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-08-01T22:55:46.328Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4711525441,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.setUp()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "Customer can search for used cars on sale",
+        "description": "",
+        "id": "search-used-cars-for-sale;customer-can-search-for-used-cars-on-sale;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 110384,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2577474250,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I navigate to motors homepage",
+            "match": {
+              "location": "UsedCarsForSaleSearchSteps.i_navigate_to_motors_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 164256255,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click on accept all button",
+            "match": {
+              "location": "UsedCarsForSaleSearchSteps.iclickonacceptallbutton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 305216629,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I enter \"B23 7RX\" in post code text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"B23 7RX\"",
+                  "offset": 8
+                }
+              ],
+              "location": "UsedCarsForSaleSearchSteps.ienterinpostcodetextfield(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 160815840,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I select \"Mercedes-Benz\" from the Make dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Mercedes-Benz\"",
+                  "offset": 9
+                }
+              ],
+              "location": "UsedCarsForSaleSearchSteps.iselectfromtheMakedropdown(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 194133154,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I select \"C Class\" from the Model dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"C Class\"",
+                  "offset": 9
+                }
+              ],
+              "location": "UsedCarsForSaleSearchSteps.iselectfromtheModeldropdown(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 128495891,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I select \"£2,000\" from the Min Price dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"£2,000\"",
+                  "offset": 9
+                }
+              ],
+              "location": "UsedCarsForSaleSearchSteps.iselectfromtheMinPricedropdown(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 127738204,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I select \"£5,000\" from the Max Price dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"£5,000\"",
+                  "offset": 9
+                }
+              ],
+              "location": "UsedCarsForSaleSearchSteps.iselectfromtheMaxPricedropdown(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5336455424,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I click on Search button",
+            "match": {
+              "location": "UsedCarsForSaleSearchSteps.iclickonSearchbutton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 291204,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "A list of cars within that \"B23 7RX\" post code is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"B23 7RX\"",
+                  "offset": 27
+                }
+              ],
+              "location": "UsedCarsForSaleSearchSteps.alistofcarswithinthatpostcodeisdisplayed(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Search Used Cars For Sale",
+    "description": "  As a customer\n  I want the ability to search fo used cars for sale\n  so that I can know more about the car before buy",
+    "id": "search-used-cars-for-sale",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/co/uk/zoopla/features/SearchUsedCarsForSale.feature",
+    "tags": []
+  }
+]
